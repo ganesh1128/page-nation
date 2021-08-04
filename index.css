@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+.list {
+	justify-content: center;
+	margin: 25px 0px;
+	gap: 30px;
+}
+.user1{
+	color: darkgreen;
+	font-weight: bolder;
+	
+}
+.user {
+	background-color: skyblue;
+	color: black;
+	font-weight: bolder;
+	padding: 25px;
+	display: grid;
+	grid-template-columns: 70px 1fr;
+	gap: 10px;
+	border-radius: 10px;
+}
+.mailId {
+	text-decoration: none;
+}
+.pageNo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.pageNo button {
+	width: 50px;
+	height: 50px;
+	
+	border: 1px;
+	outline: none;
+	margin: 20px 5px 20px 5px;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 20%;
+	color: black;
+	background-color: rgb(152 152 152);
+}
+
+.pageNo button.active {
+	background-color: skyblue;
+}
+
+@media (min-width: 250px) and (max-width: 800px) {
+	.list {
+		display: grid;
+		grid-template-columns: 370px;
+	}
+	.pageNo {
+		margin: 50px;
+	}
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+	.list {
+		display: grid;
+		grid-template-columns: 370px 370px;
+	}
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+	.list {
+		display: grid;
+		grid-template-columns: 370px 370px 370px;
+	}
+}
+
